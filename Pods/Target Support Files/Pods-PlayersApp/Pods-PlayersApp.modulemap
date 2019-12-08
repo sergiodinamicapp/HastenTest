@@ -1,0 +1,6 @@
+framework module Pods_PlayersApp {
+  umbrella header "Pods-PlayersApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
