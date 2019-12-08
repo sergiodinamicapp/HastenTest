@@ -57,6 +57,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.configureTableView()
+        self.configureNavigationBar()
     }
     
     //MARK: Private methods
@@ -67,6 +68,10 @@ class HomeViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.reloadData()
         self.tableView.keyboardDismissMode = .onDrag
+    }
+    
+    fileprivate func configureNavigationBar() {
+        navigationItem.title = "Player App"
     }
     
     func showPlayers() {
